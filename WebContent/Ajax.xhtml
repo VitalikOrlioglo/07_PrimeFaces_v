@@ -13,6 +13,7 @@
 			<p:inputText value="#{ajaxBean.message}" />
 			<!-- :(doppepunkt) bedeutet auserhalb das form -->
 			<!-- update damit ajax funktionieren kann - nicht ganze Seite zu laden, sondern nur bestimmte teile -->
+			<!-- action und value sind wahlfrei -->
 			<p:commandButton action="Ajax" value="go" update=":out" />
 		</h:form>
 		<h:outputText id="out" value="#{ajaxBean.message}" />
